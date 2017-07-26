@@ -76,8 +76,8 @@ Python 版本cifar10数据集[下载](http://www.cs.toronto.edu/~kriz/cifar-10-p
 
 ### 3 训练和测试（以AlexNet为例）
 
+[main.py](https://github.com/songh1024/PyTorchLearning/blob/master/cifar10/main.py)
 ```
-main.py
 1. root:数据集所在路径：如'../dataset/cifar-10-batches-py'
 2. mod='train' :选择训练还是测试
 3. network='AlexNet':网络结构
