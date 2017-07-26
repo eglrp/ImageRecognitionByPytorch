@@ -1,10 +1,10 @@
 # PyTorchLearning
 Some simple projects for learning PyTorch
-```
+
 Python版本：2.7.12,[PyTorch](http://pytorch.org/)
 模块：torch，torchvision，cPickle，numpy，PIL
 GPU:GTX-1070
-```
+
 ## 一 用卷积网络训练mnist数据集
 ### 1 数据集可以从这里[下载](https://pan.baidu.com/s/1jImSbps)
 
