@@ -43,7 +43,7 @@ dataset:
 
 ```
 dataPath:数据集所在路径，如 ../dataset/mnist
-mod:训练或测死,train,test
+mod:训练或测试,train,test
 testPath:训练好的模型，models/mnist-85-391.pth
 
 ```
