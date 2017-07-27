@@ -20,20 +20,19 @@ images:
       elephant,2
       flower,3
       horse,4
-
+```
 ### 2 网络结构
 - BvlcAlexNet
 - Cifar10FullNet
 
 ### 3 训练和测试
 
-```
+
 root:数据集所在路径，如 ../dataset/mnist
 mod:训练或测试,train,test
 net:网络结构
 testfile:训练好的模型，models/Cifar10FullNet/Cifar10FullNet-300-40.pth
 
-```
 ### 4 识别准确率
 
 网络  | Cifar10FullNet | AlexNet 
