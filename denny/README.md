@@ -26,12 +26,12 @@ images:
 - [Cifar10FullNet](https://github.com/BVLC/caffe/blob/master/examples/cifar10/cifar10_full_train_test.prototxt)
 
 ### 3 训练和测试
-
-
+```
 root:数据集所在路径，如 ../dataset/mnist
 mod:训练或测试,train,test
 net:网络结构
 testfile:训练好的模型，models/Cifar10FullNet/Cifar10FullNet-300-40.pth
+```
 
 ### 4 识别准确率
 
