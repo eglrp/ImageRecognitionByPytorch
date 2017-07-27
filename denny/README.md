@@ -22,8 +22,8 @@ images:
       horse,4
 ```
 ### 2 网络结构
-- BvlcAlexNet
-- Cifar10FullNet
+- [BvlcAlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet)
+- [Cifar10FullNet](https://github.com/BVLC/caffe/blob/master/examples/cifar10/cifar10_full_train_test.prototxt)
 
 ### 3 训练和测试
 
