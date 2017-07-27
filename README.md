@@ -6,7 +6,7 @@ Some simple projects for learning PyTorch
 - GPU:GTX-1070
 
 ## 一 用卷积网络训练mnist数据集
-### 1 数据集可以从这里[下载](https://pan.baidu.com/s/1jImSbps)
+### 1 数据集可以从[这里](https://pan.baidu.com/s/1jImSbps)下载
 
 ```
 dataset:
@@ -42,19 +42,23 @@ dataset:
 
 ```
 dataPath:数据集所在路径，如 ../dataset/mnist
-mod:训练或测死,train,test
+mod:训练或测试,train,test
 testPath:训练好的模型，models/mnist-85-391.pth
 
 ```
 ### 4 识别准确率
-accuracy=98.96%
 
-## 用卷积网络训练 [CIFAR10](http://www.cs.toronto.edu/~kriz/cifar.html) 
+accuracy | 98.96%
+--- | ---
+
+## 二 用卷积网络训练 [CIFAR10](http://www.cs.toronto.edu/~kriz/cifar.html) 
 
 ### 1 数据集 [cifar10](http://www.cs.toronto.edu/~kriz/cifar.html)
 Python 版本cifar10数据集[下载](http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)，解压后：
 
 ```
+训练集50000张图片，测试集10000张图片
+
 - cifar-10-batches-py/batches.meta
 - cifar-10-batches-py/data_batch_1
 - cifar-10-batches-py/data_batch_2
@@ -62,8 +66,6 @@ Python 版本cifar10数据集[下载](http://www.cs.toronto.edu/~kriz/cifar-10-p
 - cifar-10-batches-py/data_batch_4
 - cifar-10-batches-py/data_batch_5
 - cifar-10-batches-py/test_batch
-
-训练集50000张图片，测试集10000张图片
 ```
 
 
@@ -105,3 +107,47 @@ VGG19:models/Vgg19Net/Vgg19Net-42-500.pth
 
 ```
 训练好的模型可以从[这里](http://pan.baidu.com/s/1o8lxUPk)下载
+
+##  三 用卷积网络训练自定义的denny数据集
+### 1 数据集可以从[这里](https://pan.baidu.com/s/1c3xwHS)下载
+
+```
+训练集：400张图片，测试集100张图片
+dataset/train.csv
+dataset/test.csv
+dataset/classes.csv
+dataset/README.md
+images:
+      dataset/train/320.jpg
+      dataset/train/321.jpg
+      ......
+      dataset/test/300.jpg
+      dataset/test/301.jpg
+      ......
+类别：
+      truck,0
+      dinosaur,1
+      elephant,2
+      flower,3
+      horse,4
+```
+### 2 网络结构
+- [BvlcAlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet)
+- [Cifar10FullNet](https://github.com/BVLC/caffe/blob/master/examples/cifar10/cifar10_full_train_test.prototxt)
+
+### 3 训练和测试
+
+
+root:数据集所在路径，如 ../dataset/mnist
+mod:训练或测试,train,test
+net:网络结构
+testfile:训练好的模型，models/Cifar10FullNet/Cifar10FullNet-300-40.pth
+
+### 4 识别准确率
+
+网络  | Cifar10FullNet | AlexNet 
+---|---|--- 
+准确率 | 97% | 92% 
+
+训练好的模型可以从[这里](https://pan.baidu.com/s/1gfGKuEv)下载
+
